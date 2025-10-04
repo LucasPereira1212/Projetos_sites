@@ -1,0 +1,230 @@
+/* GERAL */
+:root {
+  --background: #30343f;
+  --primary: #1e2749;
+  --secondary: #273469;
+  --text-realce: #fb8500;
+  --text: #aaa;
+  --focus: #ff9f1c;
+  --safe: #45a049;
+  --input-background: #444;
+  --input-border: #555;
+  --button-background: #4caf50;
+  --white: #fff;
+}
+
+body {
+  font-family: "Arial", sans-serif;
+  background-color: var(--background);
+  margin: 0;
+  padding: 0;
+  color: var(--white);
+}
+
+.container {
+  width: 80%;
+  margin: 0 auto;
+  background-color: var(--primary);
+  padding: 20px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+}
+
+.images {
+  text-align: center;
+  margin-bottom: 20px;
+  padding: 10px;
+}
+
+.boxes {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.box1,
+.box2 {
+  flex: 1;
+  background-color: var(--secondary);
+  padding: 15px;
+  border-radius: 5px;
+}
+
+.box2 {
+  max-width: 30%;
+}
+
+h1,
+h2,
+h3 {
+  color: var(--text-realce);
+  font-size: 1.5rem;
+  /* 16px + (16/2)=8px = 16+8 = 24px*/
+}
+
+/* MEUS DADOS */
+.meus-dados {
+  max-width: 600px;
+  margin: 20px auto;
+  padding: 20px;
+}
+
+#formulario {
+  margin-top: 15px;
+}
+
+fieldset {
+  border: 1px solid var(--input-border);
+  padding: 10px;
+  border-radius: 5px;
+  margin-bottom: 15px;
+}
+
+legend {
+  color: var(--text-realce);
+  font-weight: 700;
+  /* font-weight: bold; */
+}
+
+label {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: 700;
+  flex-basis: 100px;
+}
+
+input[type="text"],
+input[type="number"] {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 10px;
+  border: 1px solid var(--input-border);
+  border-radius: 5px;
+  background-color: var(--input-background);
+  color: var(--white);
+  font-size: 1rem;
+}
+
+input[type="text"]:focus,
+input[type="number"]:focus {
+  border-color: var(--focus);
+  outline: none;
+}
+
+.form-group {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 10px;
+}
+
+/* Botão Formulário */
+#form_btn {
+  width: 100%;
+  padding: 10px;
+  font-size: 1em;
+  background-color: var(--button-background);
+  color: var(--white);
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+#form_btn:hover {
+  background-color: var(--safe);
+}
+
+/* RESUMO */
+.apply-discount {
+  border-top: 1px solid var(--input-border);
+  padding-top: 10px;
+  margin-top: 10px;
+}
+
+.apply-discount-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  cursor: pointer;
+  color: var(--text-realce);
+}
+
+.apply-discount-body {
+  display: none;
+  margin-top: 10px;
+}
+
+.apply-discount-body input {
+  width: 90%;
+  margin-right: 5px;
+}
+
+.icons {
+  display: flex;
+  flex-flow: row;
+  justify-content: center;
+  gap: 10px;
+  margin-bottom: 10px;
+}
+
+.icons i {
+  font-size: 20px;
+}
+
+.garantia_box {
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+  border-top: 1px solid var(--input-border);
+  border-bottom: 1px solid var(--input-border);
+}
+.safe {
+  color: var(--safe);
+}
+
+.safe_image {
+  width: 300px;
+  border-radius: 10%;
+  margin-bottom: 10px;
+}
+
+/* Botão de desconto */
+#discount-btn {
+  background-color: var(--text-realce);
+  color: var(--white);
+  padding: 10px 20px;
+  font-size: 1em;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+#discount-btn:hover {
+  background-color: var(--focus);
+}
+
+/* FOOTER */
+footer {
+  text-align: center;
+  margin-top: 20px;
+}
+
+footer a {
+  color: var(--text-realce);
+  text-decoration: none;
+}
+
+footer a:hover {
+  text-decoration: underline;
+}
+
+footer p {
+  color: var(--text);
+}
+/* h3 {
+  font-size: 1.2rem;
+} */
+
+/* PX - Valor da tela */
+/* REM -  unidade relativa - 1rem = 16px 1.5*/
+/* EM - uma unidade relativa, mas baseada no tamanho da fonte do elemento pai.
+ elemento pai for 20px, então 1em = 20px. */
