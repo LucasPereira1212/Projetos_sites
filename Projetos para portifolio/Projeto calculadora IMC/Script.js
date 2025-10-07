@@ -13,7 +13,7 @@ document.addEventListener("DOMContentLoaded", function () {
     if (validarCampos()) {
       resultado.innerHTML = `<p>Olá ${
         nome.value
-      }, bem vindo a calculador de imc</p>
+      },</p> <p>bem vindo a calculador de imc</p>
       <p>e seu valor IMC é ${calcularImc().toFixed(2)}</p>
       <p>sua categoria é ${categoriaImc()}</p>`;
 
