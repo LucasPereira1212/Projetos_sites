@@ -16,11 +16,13 @@ h1 {
 }
 
 #imc-form {
+  min-width: 30rem;
+  max-width: 100rem;
   padding: 6rem 4rem;
-  margin: 10rem 50rem;
+  margin: 10vh auto;
   box-shadow: 0.5rem 0.5rem 1rem rgba(0, 0, 0, 0.3);
   border-radius: 2rem;
-  max-height: 40rem;
+  max-height: 100vh;
 
   background-color: white;
 }
@@ -28,7 +30,7 @@ h1 {
 #Resultado {
   background-color: rgb(227, 223, 223);
   box-shadow: 0.5rem 0.5rem 1rem rgba(0, 0, 0, 0.3);
-  width: 95%;
+  width: 98%;
   padding: 1rem;
   border-radius: 2rem;
 }
