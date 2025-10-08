@@ -1,0 +1,235 @@
+/* GERAL */
+:root {
+  --background: #30343f;
+  --primary: #1e2749;
+  --secondary: #273469;
+  --text-realce: #fb8500;
+  --text: #aaa;
+  --focus: #ff9f1c;
+  --safe: #45a049;
+  --input-background: #444;
+  --input-border: #555;
+  --button-background: #4caf50;
+  --white: #fff;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: "Arial", sans-serif;
+  background-color: var(--background);
+  margin: 0;
+  padding: 0;
+  color: var(--white);
+}
+
+p {
+  font-size: 1.5rem;
+}
+
+.container {
+  width: 80%;
+  margin: 0 auto;
+  background-color: var(--primary);
+  padding: 2rem;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  border-radius: 0.8rem;
+}
+
+.images {
+  text-align: center;
+  margin-bottom: 2rem;
+  padding: 1rem;
+}
+
+.boxes {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+}
+
+.box1,
+.box2 {
+  flex: 1;
+  background-color: var(--secondary);
+  padding: 1.5rem;
+  border-radius: 0.5rem;
+}
+
+.box2 {
+  max-width: 50vh;
+}
+
+h1,
+h2,
+h3 {
+  color: var(--text-realce);
+  font-size: 2.4rem;
+  /* 16px + (16/2)=8px = 16+8 = 24px*/
+}
+
+/* MEUS DADOS */
+.meus-dados {
+  max-width: 60rem;
+  margin: 2rem auto;
+  padding: 2rem;
+}
+
+#formulario {
+  margin-top: 1.5rem;
+}
+
+fieldset {
+  border: 0.1rem solid var(--input-border);
+  padding: 1rem;
+  border-radius: 0.5rem;
+  margin-bottom: 1.5rem;
+}
+
+legend {
+  color: var(--text-realce);
+  font-weight: 700;
+  /* font-weight: bold; */
+}
+
+label {
+  display: block;
+  margin-bottom: 0.5rem;
+  font-weight: 700;
+  flex-basis: 10rem;
+  font-size: 1.6rem;
+}
+
+input[type="text"],
+input[type="number"] {
+  width: 100%;
+  padding: 1rem;
+  margin-bottom: 1rem;
+  border: 0.1rem solid var(--input-border);
+  border-radius: 0.5rem;
+  background-color: var(--input-background);
+  color: var(--white);
+  font-size: 1.6rem;
+}
+
+input[type="text"]:focus,
+input[type="number"]:focus {
+  border-color: var(--focus);
+  outline: none;
+}
+
+.form-group {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  margin-bottom: 1rem;
+}
+
+/* Botão Formulário */
+#form_btn {
+  width: 100%;
+  padding: 1rem;
+  font-size: 1.6rem;
+  background-color: var(--button-background);
+  color: var(--white);
+  border: none;
+  border-radius: 0.5rem;
+  cursor: pointer;
+}
+
+#form_btn:hover {
+  background-color: var(--safe);
+}
+
+/* RESUMO */
+
+span {
+  font-size: 1.5rem;
+}
+.apply-discount {
+  border-top: 0.1rem solid var(--input-border);
+  padding-top: 1rem;
+  margin-top: 1rem;
+}
+
+.apply-discount-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  cursor: pointer;
+  color: var(--text-realce);
+}
+
+.apply-discount-body {
+  display: none;
+  margin-top: 1rem;
+}
+
+.apply-discount-body input {
+  width: 90%;
+  margin-right: 0.5rem;
+}
+
+.icons {
+  display: flex;
+  flex-flow: row;
+  justify-content: center;
+  gap: 1rem;
+  margin-bottom: 1rem;
+}
+
+.icons i {
+  font-size: 3.5vh;
+}
+
+.garantia_box {
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+  border-top: 0.1rem solid var(--input-border);
+  border-bottom: 0.1rem solid var(--input-border);
+}
+.safe {
+  color: var(--safe);
+}
+
+.safe_image {
+  width: 100%;
+  border-radius: 10%;
+  margin-bottom: 1rem;
+}
+
+/* Botão de desconto */
+#discount-btn {
+  background-color: var(--text-realce);
+  color: var(--white);
+  padding: 1rem 2rem;
+  font-size: 1.6rem;
+  border: none;
+  border-radius: 0.5rem;
+  cursor: pointer;
+}
+#discount-btn:hover {
+  background-color: var(--focus);
+}
+
+/* FOOTER */
+footer {
+  text-align: center;
+  margin-top: 2rem;
+}
+
+footer a {
+  color: var(--text-realce);
+  text-decoration: none;
+}
+
+footer a:hover {
+  text-decoration: underline;
+}
+
+footer p {
+  color: var(--text);
+}

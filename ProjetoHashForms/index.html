@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Projeto HashForms</title>
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="Style.css" />
+  </head>
+  <body>
+    <main class="container">
+      <div class="images">
+        <img
+          src="https://d1muf25xaso8hp.cloudfront.net/https%3A%2F%2Fa6d41686876ceccfc436dd310b9e49aa.cdn.bubble.io%2Fd219%2Ff1723121793047x871980606331503000%2Foie_transparent.png?w=32&amp;h=45&amp;auto=compress&amp;dpr=1&amp;fit=max"
+        />
+        <img
+          src="https://d1muf25xaso8hp.cloudfront.net/https%3A%2F%2Fa6d41686876ceccfc436dd310b9e49aa.cdn.bubble.io%2Fd219%2Ff1723121799406x669791932198187400%2Foie_transparent%2520%25281%2529-fotor-202408089554.png?w=96&amp;h=28&amp;auto=compress&amp;dpr=1&amp;fit=max"
+        />
+      </div>
+
+      <div class="boxes">
+        <div class="box1">
+          <section class="meus-dados">
+            <h1><i class="bx bx-user-circle"></i> Meus Dados</h1>
+            <p>Confirme seus dados. Eles aparecerão em sua nota fiscal.</p>
+
+            <form action="#" id="formulario">
+              <fieldset>
+                <legend>Dados Pessoais</legend>
+                <div class="form-group">
+                  <label for="nome">Nome:</label>
+                  <input
+                    type="text"
+                    name="nome"
+                    id="nome"
+                    placeholder="Digite o seu nome"
+                    required
+                  />
+                </div>
+
+                <div class="form-group">
+                  <label for="cpf">CPF:</label>
+                  <input
+                    type="number"
+                    name="cpf"
+                    id="cpf"
+                    placeholder="Digite o seu CPF"
+                    required
+                  />
+                </div>
+
+                <div class="form-group">
+                  <label for="telefone">Telefone:</label>
+                  <input
+                    type="number"
+                    name="nome"
+                    id="telefone"
+                    placeholder="Digite o seu Telefone"
+                    required
+                  />
+                </div>
+              </fieldset>
+
+              <fieldset>
+                <legend>Endereço</legend>
+                <div class="form-group">
+                  <label for="cep">CEP:</label>
+                  <input
+                    type="number"
+                    name="cep"
+                    id="cep"
+                    placeholder="Digite o seu CEP"
+                    required
+                  />
+                </div>
+
+                <div class="form-group">
+                  <label for="rua">Rua:</label>
+                  <input
+                    type="text"
+                    name="rua"
+                    id="rua"
+                    placeholder="Digite o nome da Rua"
+                    required
+                  />
+                </div>
+
+                <div class="form-group">
+                  <label for="numero">Número:</label>
+                  <input
+                    type="number"
+                    name="numero"
+                    id="numero"
+                    placeholder="Digite o número da Residência"
+                    required
+                  />
+                </div>
+
+                <div class="form-group">
+                  <label for="complemento">Complemento:</label>
+                  <input
+                    type="text"
+                    name="complemento"
+                    id="complemento"
+                    placeholder="Digite o seu Complemento"
+                    required
+                  />
+                </div>
+
+                <div class="form-group">
+                  <label for="bairro">Bairro:</label>
+                  <input
+                    type="text"
+                    name="bairro"
+                    id="bairro"
+                    placeholder="Digite o seu BAIRRO"
+                    required
+                  />
+                </div>
+
+                <div class="form-group">
+                  <label for="cidade">Cidade:</label>
+                  <input
+                    type="text"
+                    name="cidade"
+                    id="cidade"
+                    placeholder="Digite a sua Cidade"
+                    required
+                  />
+                </div>
+
+                <div class="form-group">
+                  <label for="estado">Estado:</label>
+                  <input
+                    type="text"
+                    name="estado"
+                    id="estado"
+                    placeholder="Digite o seu ESTADO"
+                    required
+                  />
+                </div>
+              </fieldset>
+              <button id="form_btn" type="submit">AVANÇAR</button>
+            </form>
+          </section>
+        </div>
+        <div class="box2">
+          <section class="resumo">
+            <h2><i class="bx bx-receipt"></i> Resumo</h2>
+            <div class="resumo-item">
+              <p>Black Friday - Lote 01: R$ 1.200,00</p>
+              <p>Total: 12x R$ 100,00 ou R$ 1.200,00 à vista</p>
+            </div>
+
+            <div class="apply-discount">
+              <div class="apply-discount-header" onclick="toggleDiscount()">
+                <span>Aplicar cupom de desconto</span>
+                <i id="toogle-icon" class="bx bxs-chevron-down"></i>
+              </div>
+              <div class="apply-discount-body" id="apply-discount-body">
+                <input
+                  type="text"
+                  id="discount-code"
+                  placeholder="Digite o código de desconto"
+                />
+                <button
+                  id="discount-btn"
+                  type="button"
+                  onclick="applyDiscount()"
+                >
+                  Aplicar
+                </button>
+                <span
+                  id="discount-message"
+                  style="display: block; margin-top: 10px; color: green"
+                  >Desconto de DESCONTO10 aplicado!</span
+                >
+                <p id="total-price">Preço Total: R$ 1200.00</p>
+              </div>
+            </div>
+
+            <div class="icons">
+              <i class="bx bxl-mastercard"></i>
+              <i class="bx bxl-visa"></i>
+              <i class="bx bxl-paypal"></i>
+              <i class="bx bxl-google"></i>
+              <i class="bx bx-barcode"></i>
+            </div>
+
+            <div class="garantia">
+              <div class="garantia_box">
+                <h3>Você tem 15 dias de garantia</h3>
+                <p>
+                  Experimente! Se não gostar ou ver que não é para você,
+                  devolvemos o seu dinheiro! Sem letras miúdas.
+                </p>
+
+                <p class="safe">
+                  <i class="bx bx-check-shield"></i>
+                  <strong>Suas informações estão seguras</strong>
+                </p>
+
+                <img
+                  src="safe.jpg"
+                  alt="Imagem carrinho de supermercado com logos de segurança"
+                  class="safe_image"
+                />
+              </div>
+            </div>
+          </section>
+        </div>
+      </div>
+
+      <footer>
+        <p>
+          <a href="#">Termos de Uso</a> |
+          <a href="#">Política de Privacidade</a>
+        </p>
+        <!-- | -> Alt + 124 (teclado numérico) -->
+      </footer>
+    </main>
+    <script src="Formulario.js"></script>
+    <script src="Desconto.js"></script>
+  </body>
+</html>
