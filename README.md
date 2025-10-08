@@ -4,4 +4,4 @@ Todos esses projetos terão a parte visual do codigo e támbem a parte de vizual
 
 Link do projeto **HashForm**: https://lucaspereira1212.github.io/HashForm_Funcional/
 
-Link do projeto **Calculadora IMC**:
+Link do projeto **Calculadora IMC**: https://lucaspereira1212.github.io/Calculadora_IMC_funcional/
