@@ -14,7 +14,7 @@
   --body-background-color: #9cd7fc;
 }
 
-@media (max-widath: 600px) {
+@media (max-width: 600px) {
   :root {
     font-size: 10px;
   }
@@ -73,3 +73,4 @@ body {
 #button-box {
   margin: 1rem 0 0.5rem 0;
 }
+
