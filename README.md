@@ -6,6 +6,7 @@ Link do projeto **HashForm**: https://lucaspereira1212.github.io/HashForm_Funcio
 
 Link do projeto **Calculadora IMC**: https://lucaspereira1212.github.io/Calculadora_IMC_funcional/
 
+⚠️No projeto **Lista de filmes** a pesquisa do site deve ser feita em inglês e o ano não é obrigatório
 Link do projeto **Lista de filmes**: https://lucaspereira1212.github.io/ListaDeFilmes_Site_Funcional/
 
 Link do projeto **Cronômetro**: https://lucaspereira1212.github.io/Cronometro-com-class/
